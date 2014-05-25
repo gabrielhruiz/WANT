@@ -1,0 +1,54 @@
+@CHARSET "ISO-8859-1";
+#content {
+	background-color: #FFDB32;
+	background-color: white;
+	border: 4px solid #000000;
+	
+	width: 800px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-box-shadow: 0px 0px 50px #614727;
+	-moz-box-shadow: 2px 2px 5px #746952;
+	
+	position: absolute;
+	margin-left: -400px;
+	left: 50%;
+	margin-top: 20px;
+}
+
+#parasImg {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	position: absolute;
+}
+
+h1 {
+	float: right;
+	margin: 30px;
+}
+
+#contentLabels {
+	margin-top: 150px;
+}
+
+.singUpLine {
+	margin-left: 150px;
+}
+
+.inputSingUp {
+	width: 240px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-color: black;
+}
+
+#submitLine {
+	position: relative;
+	right: -35%;
+	margin: 15px;
+}
+
+.btnl {
+	height: 30px;
+	width: 80px;
+}

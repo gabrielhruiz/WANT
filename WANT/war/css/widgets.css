@@ -1,0 +1,91 @@
+@CHARSET "ISO-8859-1";
+
+button {
+	background-color: #FF851A;
+	color: #FFDB32;
+	border-color: black;
+	-webkit-border-radius: 10px 10px;  /* Safari  */
+  	-moz-border-radius: 10px 10px;	/* Firefox*/
+  	-webkit-box-shadow: 2px 2px 5px #746952;
+  	-moz-box-shadow: 2px 2px 5px #746952;
+  	font-weight: bolder;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.button {
+	color: #FFDB32;
+	text-decoration: inherit;
+}
+ul {
+	display: flex;
+	list-style-type: none;
+	background-color: #FFDB32;
+	-webkit-box-shadow: 2px 2px 5px #B84505;
+  	-moz-box-shadow: 2px 2px 5px #B84505;
+}
+li {
+/* 	margin-left: auto; */
+/* 	margin-right: auto; */
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.tabButton {
+	margin: 10px;
+	height: 30px;
+	width: 100px;
+}
+#tabs {
+	
+}
+html {
+	background-color: #FF851A;
+}
+body {
+	margin: 0;
+	font-weight: bolder;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	
+	width: 100% ; /* en porcentaje (el highlight del foro lo trasforma) */
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    height: 100%;
+	position: absolute;
+}
+.ui-tabs-panel {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#front {
+	width: 100%;
+	background-color: #FF851A;
+/* 	background-image: url("../img/paras.png"); */
+}
+.front {
+	width: 100%;
+	z-index: 1;	
+	position: relative;
+}
+.login {
+	float: right;
+	position: absolute;
+	z-index: 2;
+	right: 5%;
+	top: 65%;
+	height: 60px;
+	width: 150px;
+	font-size: 25px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.sing-up {
+	float: right;
+	position: absolute;
+	z-index: 2;
+	right: 30%;
+	top: 65%;
+	height: 60px;
+	width: 150px;
+	font-size: 25px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
