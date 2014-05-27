@@ -15,6 +15,9 @@ button {
 	color: #FFDB32;
 	text-decoration: inherit;
 }
+h1 {
+	display: inline;
+}
 ul {
 	display: flex;
 	list-style-type: none;
