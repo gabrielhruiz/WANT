@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+    <title>PARASITE-LOGIN</title>
+    <script src="../js/jquery/jquery-1.10.2.js"></script>
+	<script src="../js/jquery/jquery-ui-1.10.4.custom.js"></script>
+	<script src="../js/httpPetitions.js"></script>
+	<LINK href="../css/widgets.css" rel="stylesheet" type="text/css">
+	<LINK href="../css/dashboard.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<span id="welcome"></span>
+	</div>
+	
+	<script type="text/javascript">
+		var header = document.getElementById("welcome");
+		header.innerText =innerText="Welcome "+localStorage.getItem("user");	
+	</script>
+	
+	<div id="options">
+		<button class="dBtn" onclick="window.location.href='editor.html'">Test editor</button>
+		<button class="dBtn">Statistics</button>
+		<button class="dBtn">Reports</button>
+		<button class="dBtn">Play test</button>
+	</div>
+	
+</body>
+</html>

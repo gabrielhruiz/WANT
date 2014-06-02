@@ -16,12 +16,13 @@ function loginProcess(){
 		xmlhttp.send();
 		var response = xmlhttp.responseText;
 		var user = eval ("(" + response + ")");
-		UserManager.updateCurrentUser(user);
+		console.log(user);
+		localStorage.setItem("user", user.userName.toString());
 		if(password.value==user.password){
-			alert("loginOk");
+			window.location.href='dashboard.html'
 		}else{
 			alert("loginFail");
 		}
-		
+	
 	}
 }

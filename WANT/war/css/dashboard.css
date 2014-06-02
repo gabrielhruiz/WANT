@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+.dBtn {
+	width: 200px;
+	height: 100px;
+	font-size: 30px
+}
+#options {
+	display: block;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#welcome {
+	float: right;
+	padding-right: 10px;
+}
+#header {
+	width: 100%;
+	background-color: #FFDB32;
+	height: 30px;
+}
