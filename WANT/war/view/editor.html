@@ -5,11 +5,37 @@
     <title>PARASITE-EDITOR</title>
     <script src="../js/jquery/jquery-1.10.2.js"></script>
 	<script src="../js/jquery/jquery-ui-1.10.4.custom.js"></script>
+	<script src="../js/dynatree/jquery.dynatree.js"></script>
+	<script src="../js/dynatree/scriptTree.js"></script>
 	<script src="../js/httpPetitions.js"></script>
+	<LINK href="../css/dynatree/ui.dynatree.css" rel="stylesheet" type="text/css">
 	<LINK href="../css/widgets.css" rel="stylesheet" type="text/css">
 	<LINK href="../css/editor.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript">
+		$(function(){
+			$("#info").hide();
+			
+			$("#generalHelp").click(function(){
+				$("#info").show("blind", 500);
+			});
+			
+			$(".exit").click(function(){
+				$("#info").hide();
+			});
+		});
+	
+		
+	</script>
 </head>
+
 <body>
+	<div id="info">
+		<span>Implemented soon</span>
+		<button id="exit" class="exit">
+			<img class="exitImg" alt="" src="../img/exit.jpg">
+		</button>
+	</div>
 
 	<div id="editorHeader">
 		<div id="header">
@@ -21,15 +47,24 @@
 		</div>
 		<script type="text/javascript">
 			var header = document.getElementById("userName");
-			header.innerText = localStorage.getItem("user");	
+			header.innerText = localStorage.getItem("user");
+			
 		</script>
 	</div>
 	<div id="editorContent">
 		<div id="editorTree">
+			<div id="optionButtons">
+				<button class="optionBtn"><img class="optionBtnImg" alt="" src="../img/new.png"></button>
+				<button class="optionBtn"><img class="optionBtnImg" alt="" src="../img/delete.png"></button>
+				<button class="optionBtn"><img class="optionBtnImg" alt="" src="../img/save.jpg"></button>
+			</div>
+			<div id="tree"> </div>
 		</div>
 		<div id="editorScript">
 		</div>
-		<div id="editorInfo"></div>
+		<div id="editorInfo">
+			<textarea id="console"></textarea>
+		</div>
 	</div>
 	
 </body>

@@ -91,4 +91,16 @@ body {
 	font-size: 25px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
-
+.exit {
+	padding: 0;
+	margin: 5px;
+	float: right;
+	width: 30px;
+	height: 30px;
+}
+.exitImg {
+	-webkit-border-radius: 10px 10px;
+	-moz-border-radius: 10px 10px;
+	width: 100%;
+	position: relative;
+}

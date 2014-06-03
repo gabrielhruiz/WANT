@@ -63,6 +63,14 @@
 	-webkit-box-shadow: 0px 0px 25px #746952;
 	-moz-box-shadow: 0px 0px 25px #746952;
 	float: right;
+	display: flex;
+}
+#console {
+	width: 100%;
+	margin: 10px;
+	border: 0;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
 }
 #editorScript {
 	width: 1070px;
@@ -74,4 +82,44 @@
 	-moz-box-shadow: 0px 0px 25px #746952;
 	float: right;
 	min-height: 450px;
+}
+ul {
+	display: block;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 0px white;
+	-moz-box-shadow: 0px 0px 0px white;
+}
+.dynatree-container {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+#info {
+	position: absolute;
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	-webkit-box-shadow: 0px 0px 50px #B84505;
+	-moz-box-shadow: 0px 0px 50px #B84505;
+	-webkit-border-radius: 15px 15px;
+	-moz-border-radius: 15px 15px;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	z-index: 1;
+}
+#optionButtons {
+	margin: 5px;
+}
+.optionBtn {
+	padding: 0;
+	height: 40px;
+	width: 40px;
+	background-color: white;
+}
+.optionBtnImg {
+	-webkit-border-radius: 7px 7px;
+	-moz-border-radius: 7px 7px;
+	width: 100%;
+	position: relative;
 }
