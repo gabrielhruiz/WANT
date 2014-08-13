@@ -1,11 +1,7 @@
 package org.app.want.parasite.useraccount;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
-import org.app.want.parasite.file.File;
 @Entity
 public class UserAccount {
 	private String name;
@@ -16,7 +12,6 @@ public class UserAccount {
 	private String mail;
 	private String phone;
 	private Integer zipcode;
-	private List<File> files;
 	private String uType;
 	public UserAccount(){}
 	public UserAccount(String name, String surname, String username, String pssd, String mail, String phone, Integer zipcode){
@@ -69,12 +64,6 @@ public class UserAccount {
 	}
 	public void setZipcode(Integer zipcode) {
 		this.zipcode = zipcode;
-	}
-	public List<File> getFiles() {
-		return files;
-	}
-	public void setFiles(List<File> files) {
-		this.files = files;
 	}
 	public String getuType() {
 		return uType;

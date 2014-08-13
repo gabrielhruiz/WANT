@@ -4,7 +4,7 @@ var getUser = function(userName){
 		sessionOut();
 	}
 	
-	var url = window.location.protocol+"//"+window.location.host+"/users"+"?"+userName;
+	var url = window.location.protocol+"//"+window.location.host+"/user"+"?"+userName;
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		xmlhttp=new XMLHttpRequest();

@@ -1,15 +1,10 @@
 package org.app.want.parasite.converters;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.app.want.parasite.file.File;
 import org.app.want.parasite.useraccount.UserAccount;
 
 public class ToUserAccount {
 	public static UserAccount urlToUserAccount(String queryString){
 		UserAccount user = new UserAccount();
-		List<File> files = new ArrayList<File>();
 		String[] userDates = queryString.split("&");
 		
 		user.setName(userDates[0].split("=")[1]);
@@ -19,7 +14,6 @@ public class ToUserAccount {
 		user.setMail(userDates[4].split("=")[1]);
 		user.setPhone(userDates[5].split("=")[1]);
 		user.setZipcode(new Integer(userDates[6].split("=")[1]));
-		user.setFiles(files);
 		user.setuType("user");
 		
 		return user;
